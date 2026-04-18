@@ -11,116 +11,204 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="frame">
-      <section class="left-panel">
-        <div class="hero">
-          <p class="kicker"><span class="dot"></span> Enterprise AI Architecture</p>
-          <h1>Build real enterprise AI with connected knowledge and structured meaning.</h1>
-          <p class="subtitle">
-            AI alone is not enough. Unify knowledge sources, define ontology, and activate an
-            intelligence layer that reasons, retrieves, and orchestrates action.
-          </p>
-          <button>Get Started</button>
-        </div>
+    <div class="noise" aria-hidden="true"></div>
 
-        <div class="layers">
-          <details open>
-            <summary>
-              <span><span class="idx">01</span> Knowledge Source Layer</span>
-            </summary>
-            <ul>
-              <li>Connect docs, systems, CRM, events, and process data.</li>
-              <li>Capture metadata, lineage, and policy context.</li>
-              <li>Create one governed knowledge plane.</li>
-            </ul>
-          </details>
+    <header class="site-header container">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <span>Foundry Intelligence Layer</span>
+      </div>
+      <nav>
+        <a href="#architecture">Architecture</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#applications">Applications</a>
+      </nav>
+      <button class="ghost-btn">Platform Access</button>
+    </header>
 
-          <details>
-            <summary>
-              <span><span class="idx">02</span> Ontology Layer</span>
-            </summary>
-            <ul>
-              <li>Define concepts, entities, and shared relationships.</li>
-              <li>Normalize meaning across business domains.</li>
-              <li>Version semantic models with governance.</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>
-              <span><span class="idx">03</span> Intelligence Layer</span>
-            </summary>
-            <ul>
-              <li>Apply retrieval, reasoning, and orchestration.</li>
-              <li>Use policy-aware agents and monitored workflows.</li>
-              <li>Turn structured context into reliable decisions.</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>
-              <span><span class="idx">04</span> Application Layer</span>
-            </summary>
-            <ul>
-              <li>Enable copilots, decision hubs, and workflow automation.</li>
-              <li>Ship reusable intelligence services to product teams.</li>
-              <li>Deliver measurable enterprise value.</li>
-            </ul>
-          </details>
+    <main>
+      <section class="hero container">
+        <p class="eyebrow">Enterprise AI Infrastructure</p>
+        <h1>AI is only the surface.<br />Intelligence requires architecture.</h1>
+        <p class="intro">
+          Build intelligent enterprise applications on a trusted foundation that unifies
+          knowledge sources, models shared meaning through ontology, and activates AI to
+          reason, retrieve, and orchestrate action.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-btn">Explore Platform</button>
+          <button class="ghost-btn">Read Architecture Brief</button>
         </div>
       </section>
 
-      <section class="right-panel" aria-label="Layered system diagram">
-        <svg viewBox="0 0 720 980" role="img" aria-label="Layered intelligence architecture">
-          <defs>
-            <linearGradient id="plateGlow" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stop-color="#1b202a" />
-              <stop offset="50%" stop-color="#131722" />
-              <stop offset="100%" stop-color="#1b202a" />
-            </linearGradient>
-          </defs>
+      <section id="architecture" class="architecture container">
+        <div class="section-head">
+          <p class="eyebrow">Layered System Design</p>
+          <h2>A modular stack from raw signal to business outcome</h2>
+        </div>
 
-          <line x1="360" y1="40" x2="360" y2="940" class="axis" />
+        <div class="architecture-grid">
+          <article class="layer-card">
+            <header>
+              <span class="layer-index">01</span>
+              <h3>Knowledge Sources</h3>
+            </header>
+            <p>
+              Connect documents, transactional systems, process telemetry, and domain
+              artifacts into a governed, continuously refreshed knowledge plane.
+            </p>
+            <ul>
+              <li>Data connectors & ingestion</li>
+              <li>Document intelligence & metadata</li>
+              <li>Lineage, quality, and policy controls</li>
+            </ul>
+          </article>
 
-          <polygon points="360,70 470,140 360,210 250,140" class="poly top" />
-          <line x1="360" y1="70" x2="360" y2="130" class="wire" />
+          <article class="layer-card">
+            <header>
+              <span class="layer-index">02</span>
+              <h3>Ontology & Shared Meaning</h3>
+            </header>
+            <p>
+              Define business entities, relationships, and context boundaries so teams and
+              models reason with the same semantic contract.
+            </p>
+            <ul>
+              <li>Domain concepts & graph schema</li>
+              <li>Cross-system mapping & normalization</li>
+              <li>Versioned governance workflow</li>
+            </ul>
+          </article>
 
-          <polygon points="130,250 360,120 590,250 360,380" class="plate" />
-          <ellipse cx="360" cy="320" rx="120" ry="34" class="ring" />
-          <ellipse cx="360" cy="320" rx="35" ry="18" class="core" />
+          <article class="layer-card">
+            <header>
+              <span class="layer-index">03</span>
+              <h3>AI Intelligence Layer</h3>
+            </header>
+            <p>
+              Apply retrieval, reasoning, planning, and orchestration across structured
+              knowledge and dynamic enterprise context.
+            </p>
+            <ul>
+              <li>Contextual retrieval & ranking</li>
+              <li>Tool orchestration & policy-aware agents</li>
+              <li>Evaluation, monitoring, and guardrails</li>
+            </ul>
+          </article>
 
-          <polygon points="130,410 360,280 590,410 360,540" class="plate" />
-          <ellipse cx="360" cy="472" rx="58" ry="24" class="ring-sm" />
+          <article class="layer-card">
+            <header>
+              <span class="layer-index">04</span>
+              <h3>Applications</h3>
+            </header>
+            <p>
+              Deliver product experiences for operations, planning, support, and strategy
+              with composable APIs and reusable intelligence services.
+            </p>
+            <ul>
+              <li>Workflow copilots & autonomous actions</li>
+              <li>Insight dashboards & decision support</li>
+              <li>Embedded domain intelligence</li>
+            </ul>
+          </article>
+        </div>
 
-          <polygon points="235,510 360,450 485,510 485,560 360,610 235,560" class="block" />
-          <ellipse cx="360" cy="540" rx="40" ry="15" class="hole" />
+        <div class="system-visual" aria-hidden="true">
+          <svg viewBox="0 0 920 380" role="img">
+            <defs>
+              <linearGradient id="lineGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0" />
+                <stop offset="45%" stop-color="#7dd3fc" stop-opacity="0.6" />
+                <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <g class="plate" transform="translate(30,20)">
+              <rect x="0" y="0" width="860" height="72" rx="12" />
+              <text x="20" y="42">Knowledge Sources</text>
+            </g>
+            <g class="plate" transform="translate(70,108)">
+              <rect x="0" y="0" width="780" height="72" rx="12" />
+              <text x="20" y="42">Ontology Graph</text>
+            </g>
+            <g class="plate" transform="translate(110,196)">
+              <rect x="0" y="0" width="700" height="72" rx="12" />
+              <text x="20" y="42">Intelligence Orchestration</text>
+            </g>
+            <g class="plate" transform="translate(150,284)">
+              <rect x="0" y="0" width="620" height="72" rx="12" />
+              <text x="20" y="42">Business Applications</text>
+            </g>
+            <line x1="460" y1="92" x2="460" y2="108" />
+            <line x1="460" y1="180" x2="460" y2="196" />
+            <line x1="460" y1="268" x2="460" y2="284" />
+            <line x1="340" y1="56" x2="580" y2="56" stroke="url(#lineGlow)" />
+          </svg>
+        </div>
+      </section>
 
-          <polygon points="130,590 360,460 590,590 360,720" class="plate" />
-          <polygon points="235,680 360,610 485,680 360,750" class="tier" />
-          <polygon points="265,650 360,595 455,650 360,705" class="tier" />
+      <section id="capabilities" class="capabilities container">
+        <div class="section-head">
+          <p class="eyebrow">Core Capabilities</p>
+          <h2>Built for platform teams that scale intelligence across the enterprise</h2>
+        </div>
+        <div class="cap-grid">
+          <article>
+            <h3>Unified Knowledge Mesh</h3>
+            <p>
+              Consolidate fragmented source systems into one operational substrate for
+              retrieval and reasoning.
+            </p>
+          </article>
+          <article>
+            <h3>Semantic Governance</h3>
+            <p>
+              Encode business language as a governed ontology that aligns teams, data, and
+              models.
+            </p>
+          </article>
+          <article>
+            <h3>Composable Intelligence Services</h3>
+            <p>
+              Expose modular AI capabilities through APIs that product teams can safely
+              assemble into user-facing workflows.
+            </p>
+          </article>
+          <article>
+            <h3>Enterprise Trust Controls</h3>
+            <p>
+              Apply observability, permissioning, and evaluation gates to keep intelligence
+              reliable in production.
+            </p>
+          </article>
+        </div>
+      </section>
 
-          <line x1="360" y1="140" x2="560" y2="140" class="label-line" />
-          <circle cx="560" cy="140" r="4" class="node" /><text x="572" y="146">CONNECT</text>
-
-          <line x1="360" y1="320" x2="560" y2="320" class="label-line" />
-          <circle cx="560" cy="320" r="4" class="node" /><text x="572" y="326">RESOLVE</text>
-
-          <line x1="360" y1="540" x2="560" y2="540" class="label-line" />
-          <circle cx="560" cy="540" r="4" class="node" /><text x="572" y="546">CONTROL</text>
-
-          <line x1="360" y1="680" x2="560" y2="680" class="label-line" />
-          <circle cx="560" cy="680" r="4" class="node" /><text x="572" y="686">ANALYZE</text>
-
-          <circle cx="360" cy="40" r="4" class="node" />
-          <circle cx="360" cy="940" r="4" class="node" />
-        </svg>
+      <section id="applications" class="applications container">
+        <div>
+          <p class="eyebrow">Outcome Layer</p>
+          <h2>From foundation to differentiated products</h2>
+          <p>
+            Business and product teams build faster when they inherit connected knowledge,
+            shared semantics, and reusable intelligence patterns from day one.
+          </p>
+        </div>
+        <div class="app-pillars">
+          <article><h3>Ops Assistants</h3><p>Resolve exceptions, automate triage, and route action.</p></article>
+          <article><h3>Decision Hubs</h3><p>Surface contextual insight with explainable reasoning paths.</p></article>
+          <article><h3>Workflow Intelligence</h3><p>Embed adaptive planning and agentic execution into core processes.</p></article>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer container">
+      <p>Foundry Intelligence Layer · Built for enterprise platform teams</p>
+      <a href="#">Architecture documentation</a>
+    </footer>
   </body>
 </html>
